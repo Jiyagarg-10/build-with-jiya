@@ -1,3 +1,5 @@
+const BASE = process.env.NODE_ENV === 'production' ? '/build-with-jiya' : ''
+
 const projects = [
   {
     name: 'LUMEN AESTHETICS',
@@ -6,7 +8,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/lumen-aesthetics/',
     code: 'https://github.com/Jiyagarg-10/lumen-aesthetics',
     bg: 'linear-gradient(135deg, #1a0a1e 0%, #2d1040 100%)',
-    img: '/screenshots/lumen.png',
+    img: `${BASE}/screenshots/lumen.png`,
   },
   {
     name: "JOE'S CAFE",
@@ -15,7 +17,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/joes-cafe/',
     code: 'https://github.com/Jiyagarg-10/joes-cafe',
     bg: 'linear-gradient(135deg, #0a1a12 0%, #0f2d1e 100%)',
-    img: '/screenshots/joes-cafe.png',
+    img: `${BASE}/screenshots/joes-cafe.png`,
   },
   {
     name: 'GALAXY SHOES',
@@ -24,7 +26,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/galaxy-shoes/',
     code: 'https://github.com/Jiyagarg-10/galaxy-shoes',
     bg: 'linear-gradient(135deg, #0a0a1e 0%, #151535 100%)',
-    img: '/screenshots/galaxy-shoes.png',
+    img: `${BASE}/screenshots/galaxy-shoes.png`,
   },
   {
     name: 'LÊ PHIN',
@@ -33,7 +35,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/le-phin/',
     code: 'https://github.com/Jiyagarg-10/le-phin',
     bg: 'linear-gradient(135deg, #1a0f08 0%, #2d1a0a 100%)',
-    img: '/screenshots/le-phin.png',
+    img: `${BASE}/screenshots/le-phin.png`,
   },
 ]
 
@@ -70,6 +72,16 @@ export default function Home() {
 
       {/* ── HERO ── */}
       <section className="hero">
+        {/* floating doodles */}
+        <span className="doodle doodle-q">?</span>
+        <span className="doodle doodle-star">✦</span>
+        <span className="doodle doodle-smile">☺</span>
+        <span className="doodle doodle-arrow">↗</span>
+        <span className="doodle doodle-dot">◆</span>
+        <span className="doodle doodle-squig">∿</span>
+        <span className="doodle doodle-plus">✕</span>
+        <span className="doodle doodle-circle">○</span>
+
         <div className="hero-badge-row">
           <span className="hero-badge badge-greenwich">🎓 University of Greenwich</span>
           <span className="hero-badge badge-london">📍 London, UK</span>
@@ -178,7 +190,7 @@ export default function Home() {
           <div className="about-grid">
             <div className="about-left-col">
               <div className="about-photo">
-                <img src="/jiya.jpg" alt="Jiya — web designer based in London" />
+                <img src={`${BASE}/jiya.jpg`} alt="Jiya — web designer based in London" />
               </div>
               <div className="about-stats-row">
                 <div>
