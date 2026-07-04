@@ -87,7 +87,7 @@ export default function Home() {
           I use a mix of hand-coded HTML/CSS/JS, React, GSAP, and AI-assisted tools like Lovable, Bolt.new, and Durable to get quality sites live fast. Usually 3–5 days from kick-off to launch.
         </p>
         <div className="hero-pills">
-          {['Greenwich Uni', 'London 📍', '3–5 day delivery', 'AI-powered builds', 'Beauty specialist'].map(t => (
+          {['3–5 day delivery', 'AI-powered builds', 'Beauty specialist'].map(t => (
             <span key={t} className="pill">{t}</span>
           ))}
         </div>
