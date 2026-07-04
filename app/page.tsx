@@ -58,7 +58,7 @@ export default function Home() {
       <nav className="nav">
         <div className="nav-logo">
           <div className="nav-initials">JG</div>
-          <span className="nav-brand">Build with Jiya</span>
+          <span className="nav-brand">Jiya Garg</span>
         </div>
         <div className="nav-links">
           <a href="#projects">Work</a>
@@ -253,7 +253,7 @@ export default function Home() {
 
       {/* ── FOOTER ── */}
       <footer className="footer">
-        <span className="footer-left">Build with Jiya ✦ 2026 · London</span>
+        <span className="footer-left">Jiya Garg ✦ 2026 · London</span>
         <div className="footer-links">
           <a href="https://github.com/Jiyagarg-10" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://www.instagram.com/jiyagarg__?igsh=MWNwM200cXA1cWRkdQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>

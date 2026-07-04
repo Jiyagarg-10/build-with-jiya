@@ -18,7 +18,7 @@ const spaceMono = Space_Mono({
 })
 
 export const metadata: Metadata = {
-  title: 'Build with Jiya — Web Designer · AI-powered sites',
+  title: 'Jiya Garg — Web Designer · AI-powered sites',
   description: 'Web designer based in London. Clean, conversion-focused websites built in 3–5 days.',
 }
 
