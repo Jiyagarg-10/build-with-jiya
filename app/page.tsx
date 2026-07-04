@@ -180,34 +180,38 @@ export default function Home() {
             <div className="about-photo">
               <img src="/jiya.jpg" alt="Jiya — web designer based in London" />
             </div>
-            <div className="about-left">
-              <div>
-                <span className="stat-number pink">3–5</span>
-                <span className="stat-label">day delivery</span>
+            <div className="about-right-col">
+              {/* stats row */}
+              <div className="about-stats-row">
+                <div>
+                  <span className="stat-number pink">3–5</span>
+                  <span className="stat-label">day delivery</span>
+                </div>
+                <div>
+                  <span className="stat-number teal">4</span>
+                  <span className="stat-label">live sites built</span>
+                </div>
+                <div>
+                  <span className="stat-number yellow">∞</span>
+                  <span className="stat-label">ideas to ship</span>
+                </div>
               </div>
-              <div>
-                <span className="stat-number teal">4</span>
-                <span className="stat-label">live sites built</span>
-              </div>
-              <div>
-                <span className="stat-number yellow">∞</span>
-                <span className="stat-label">ideas to ship</span>
-              </div>
-            </div>
-            <div className="about-right">
-              <span className="eyebrow">About me</span>
-              <p className="about-body">
-                I&apos;m a self-taught web designer based in London, currently studying at the <strong style={{color:'#6ecf6e'}}>University of Greenwich</strong>. I build websites that look good and actually do something — convert visitors, generate bookings, build trust.
-              </p>
-              <p className="about-body">
-                Most of my clients are beauty businesses: salons, lash techs, nail studios, and fitness coaches who need a professional online presence without the 3-month agency timeline and price tag.
-              </p>
-              <p className="about-body">
-                Every project here was built from scratch, with a real brief and a real outcome in mind. I use AI tools to move fast, not cut corners — the code is clean, the design is intentional, and the sites work.
-              </p>
-              <div style={{display:'flex', flexWrap:'wrap', gap:'0.5rem', marginTop:'1.5rem'}}>
-                <span className="about-location loc-greenwich">🎓 Univ. of Greenwich</span>
-                <span className="about-location loc-london">📍 London, UK</span>
+              {/* bio */}
+              <div className="about-right">
+                <span className="eyebrow">About me</span>
+                <p className="about-body">
+                  I&apos;m a self-taught web designer based in London, currently studying at the <strong style={{color:'#6ecf6e'}}>University of Greenwich</strong>. I build websites that look good and actually do something — convert visitors, generate bookings, build trust.
+                </p>
+                <p className="about-body">
+                  Most of my clients are beauty businesses: salons, lash techs, nail studios, and fitness coaches who need a professional online presence without the 3-month agency timeline and price tag.
+                </p>
+                <p className="about-body">
+                  Every project here was built from scratch, with a real brief and a real outcome in mind. I use AI tools to move fast, not cut corners — the code is clean, the design is intentional, and the sites work.
+                </p>
+                <div style={{display:'flex', flexWrap:'wrap', gap:'0.5rem', marginTop:'1.5rem'}}>
+                  <span className="about-location loc-greenwich">🎓 Univ. of Greenwich</span>
+                  <span className="about-location loc-london">📍 London, UK</span>
+                </div>
               </div>
             </div>
           </div>
