@@ -13,6 +13,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/lumen-aesthetics/',
     code: 'https://github.com/Jiyagarg-10/lumen-aesthetics',
     bg: 'linear-gradient(135deg, #1a0a1e 0%, #2d1040 100%)',
+    cardBg: '#fce4ec',
     img: `${BASE}/screenshots/lumen.png`,
   },
   {
@@ -22,6 +23,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/joes-cafe/',
     code: 'https://github.com/Jiyagarg-10/joes-cafe',
     bg: 'linear-gradient(135deg, #0a1a12 0%, #0f2d1e 100%)',
+    cardBg: '#e0f7f4',
     img: `${BASE}/screenshots/joes-cafe.png`,
   },
   {
@@ -31,6 +33,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/galaxy-shoes/',
     code: 'https://github.com/Jiyagarg-10/galaxy-shoes',
     bg: 'linear-gradient(135deg, #0a0a1e 0%, #151535 100%)',
+    cardBg: '#ede7f6',
     img: `${BASE}/screenshots/galaxy-shoes.png`,
   },
   {
@@ -40,6 +43,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/le-phin/',
     code: 'https://github.com/Jiyagarg-10/le-phin',
     bg: 'linear-gradient(135deg, #1a0f08 0%, #2d1a0a 100%)',
+    cardBg: '#fff8e1',
     img: `${BASE}/screenshots/le-phin.png`,
   },
 ]
@@ -175,6 +179,7 @@ export default function AnimatedSite() {
           <FadeIn key={p.name} delay={i * 0.08}>
             <motion.article
               className="project-card"
+              style={{ background: p.cardBg }}
               whileHover={{ y: -4, boxShadow: '0 24px 60px rgba(0,0,0,0.18)' }}
               transition={{ type: 'spring', stiffness: 300, damping: 24 }}
             >
