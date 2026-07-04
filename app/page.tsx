@@ -30,10 +30,10 @@ const projects = [
     name: 'LÊ PHIN',
     desc: 'Vietnamese coffee shop client mockup for an East Village NYC café. Warm earthy tones, full menu page, embedded map, and ordering flow.',
     tech: 'HTML · CSS · JS',
-    live: null,
-    code: null,
+    live: 'https://jiyagarg-10.github.io/le-phin/',
+    code: 'https://github.com/Jiyagarg-10/le-phin',
     bg: 'linear-gradient(135deg, #1a0f08 0%, #2d1a0a 100%)',
-    img: null,
+    img: '/screenshots/le-phin.png',
   },
 ]
 
