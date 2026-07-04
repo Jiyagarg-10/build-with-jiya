@@ -252,13 +252,8 @@ export default function Home() {
           >
             Comment SITE on Instagram ↗
           </a>
-          <a
-            href="https://www.instagram.com/jiyagarg__?igsh=MWNwM200cXA1cWRkdQ%3D%3D&utm_source=qr"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost"
-          >
-            DM me directly
+          <a href="mailto:gargjiya714@gmail.com" className="btn-ghost">
+            Send an email
           </a>
         </div>
       </section>
