@@ -3,39 +3,44 @@ const projects = [
     name: 'LUMEN AESTHETICS',
     desc: 'Medical aesthetics clinic with scroll-triggered animations, bento grid layout, and an editorial premium feel built entirely in vanilla HTML/CSS/JS.',
     tech: 'HTML · CSS · JS',
-    type: 'Medical / Beauty',
     live: 'https://jiyagarg-10.github.io/lumen-aesthetics/',
     code: 'https://github.com/Jiyagarg-10/lumen-aesthetics',
+    bg: 'linear-gradient(135deg, #1a0a1e 0%, #2d1040 100%)',
+    img: null,
   },
   {
     name: "JOE'S CAFE",
-    desc: 'Interactive café ordering site with eat-in and takeaway flow, animated cart, and a clean menu experience.',
+    desc: 'Interactive café ordering site with eat-in and takeaway flow, animated cart, and a clean browsable menu experience.',
     tech: 'HTML · CSS · JS',
-    type: 'Food & Beverage',
     live: 'https://jiyagarg-10.github.io/joes-cafe/',
     code: 'https://github.com/Jiyagarg-10/joes-cafe',
+    bg: 'linear-gradient(135deg, #0a1a12 0%, #0f2d1e 100%)',
+    img: null,
   },
   {
     name: 'GALAXY SHOES',
     desc: 'Futuristic sneaker e-commerce with scroll-driven GSAP scenes, animated SVG star fields, and a full product browsing experience.',
     tech: 'GSAP · SVG · JS',
-    type: 'E-commerce',
     live: 'https://jiyagarg-10.github.io/galaxy-shoes/',
     code: 'https://github.com/Jiyagarg-10/galaxy-shoes',
+    bg: 'linear-gradient(135deg, #0a0a1e 0%, #151535 100%)',
+    img: null,
   },
   {
     name: 'LÊ PHIN',
     desc: 'Vietnamese coffee shop client mockup for an East Village NYC café. Warm earthy tones, full menu page, embedded map, and ordering flow.',
     tech: 'HTML · CSS · JS',
-    type: 'Food & Beverage',
     live: null,
     code: null,
+    bg: 'linear-gradient(135deg, #1a0f08 0%, #2d1a0a 100%)',
+    img: null,
   },
 ]
 
 function Marquee({ name, reverse }: { name: string; reverse: boolean }) {
-  const chunk = `${name} ✦ `
-  const repeated = Array(10).fill(chunk).join('')
+  const chunk = `${name} <sep>✦</sep> `
+  const item = `${name} ✦ `
+  const repeated = Array(12).fill(item).join('')
   return (
     <div className="project-marquee">
       <div className={`marquee-track${reverse ? ' rev' : ''}`}>
@@ -98,25 +103,32 @@ export default function Home() {
           <article key={p.name} className="project-card">
             <Marquee name={p.name} reverse={i % 2 !== 0} />
             <div className="project-body">
-              <div>
-                <div className="project-name">{p.name}</div>
-                <p className="project-desc">{p.desc}</p>
-                <div className="project-tech">{p.tech}</div>
-              </div>
-              <div className="project-right">
-                <span className="project-type">{p.type}</span>
-                <div className="project-links">
-                  {p.live ? (
-                    <a href={p.live} target="_blank" rel="noopener noreferrer" className="btn-live">Live ↗</a>
-                  ) : (
-                    <span className="btn-none">Soon</span>
-                  )}
-                  {p.code ? (
-                    <a href={p.code} target="_blank" rel="noopener noreferrer" className="btn-code">Code</a>
-                  ) : (
-                    <span className="btn-none">—</span>
-                  )}
+              {/* left: text */}
+              <div className="project-text">
+                <p className="project-desc-big">{p.desc}</p>
+                <div className="project-bottom">
+                  <div className="project-tech-pills">
+                    {p.tech.split(' · ').map(t => <span key={t} className="tech-pill">{t}</span>)}
+                  </div>
+                  <div className="project-links">
+                    {p.live ? (
+                      <a href={p.live} target="_blank" rel="noopener noreferrer" className="btn-live">Live ↗</a>
+                    ) : (
+                      <span className="btn-none">Coming soon</span>
+                    )}
+                    {p.code ? (
+                      <a href={p.code} target="_blank" rel="noopener noreferrer" className="btn-code">Code</a>
+                    ) : null}
+                  </div>
                 </div>
+              </div>
+              {/* right: image */}
+              <div className="project-image" style={{background: p.bg}}>
+                {p.img ? (
+                  <img src={p.img} alt={p.name} />
+                ) : (
+                  <div className="project-image-placeholder">{p.name}</div>
+                )}
               </div>
             </div>
           </article>
