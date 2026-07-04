@@ -137,7 +137,7 @@ export default function AnimatedSite() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.55, delay: 0.35 }}
         >
-          …for beauty businesses, independent brands &amp; anyone with a bold vision.
+          …for independent brands, small businesses &amp; anyone with a bold vision.
         </motion.p>
 
         <motion.p
@@ -146,7 +146,7 @@ export default function AnimatedSite() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.45 }}
         >
-          Self-taught web designer studying at the University of Greenwich, based in London. I specialise in clean, fast, conversion-focused websites — primarily for beauty businesses and independent brands, but I&apos;m always up for an interesting brief.
+          Self-taught web designer studying at the University of Greenwich, based in London. I specialise in clean, fast, conversion-focused websites for independent brands and small businesses — but I&apos;m always up for an interesting brief.
         </motion.p>
         <motion.p
           className="hero-body"
@@ -154,7 +154,7 @@ export default function AnimatedSite() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.52 }}
         >
-          I use a mix of hand-coded HTML/CSS/JS, React, GSAP, and AI-assisted tools like Lovable, Bolt.new, and Durable to get quality sites live fast. Usually 2–3 days from kick-off to launch.
+          I use a mix of hand-coded HTML/CSS/JS, React, GSAP, and AI-assisted tools like Lovable, Bolt.new, and Durable to get quality sites live fast. Usually 3–5 days from kick-off to launch.
         </motion.p>
 
         <motion.div
@@ -163,7 +163,7 @@ export default function AnimatedSite() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          {['2–3 day delivery', 'AI-powered builds', 'Beauty specialist'].map(t => (
+          {['3–5 day delivery', 'AI-powered builds', 'Independent brands'].map(t => (
             <span key={t} className="pill">{t}</span>
           ))}
         </motion.div>
@@ -217,13 +217,13 @@ export default function AnimatedSite() {
         <FadeIn>
           <div className="how-header">
             <span className="eyebrow">How it works</span>
-            <span className="how-tagline">From first message to live site in 2–3 days.</span>
+            <span className="how-tagline">From first message to live site in 3–5 days.</span>
           </div>
         </FadeIn>
         <div className="how-steps">
           {[
             { num: '01', title: 'Brief', desc: 'You tell me about your business, what you need, and what you like. No forms, no calls required — a DM or voice note works perfectly.', time: 'Day 1' },
-            { num: '02', title: 'Build', desc: 'I design and build your site — clean, fast, mobile-first. You get a preview link to review before anything goes live. One round of revisions included.', time: 'Days 2–3' },
+            { num: '02', title: 'Build', desc: 'I design and build your site — clean, fast, mobile-first. You get a preview link to review before anything goes live. One round of revisions included.', time: 'Days 2–4' },
             { num: '03', title: 'Launch', desc: 'Your site goes live on your domain. I handle the deployment, do a final check, and hand everything over — including the code if you want it.', time: 'Day 3' },
           ].map((s, i) => (
             <FadeIn key={s.num} delay={i * 0.1}>
@@ -259,7 +259,7 @@ export default function AnimatedSite() {
                   <img src={`${BASE}/jiya.jpg`} alt="Jiya — web designer based in London" />
                 </div>
                 <div className="about-stats-row">
-                  <div><span className="stat-number pink">2–3</span><span className="stat-label">day delivery</span></div>
+                  <div><span className="stat-number pink">3–5</span><span className="stat-label">day delivery</span></div>
                   <div><span className="stat-number teal">4</span><span className="stat-label">live sites built</span></div>
                   <div><span className="stat-number yellow">∞</span><span className="stat-label">ideas to ship</span></div>
                 </div>
@@ -270,14 +270,14 @@ export default function AnimatedSite() {
                 <div className="about-right">
                   <span className="eyebrow">About me</span>
                   <p className="about-body">I&apos;m a self-taught web designer based in London. I build websites that look good and actually do something — convert visitors, generate bookings, build trust.</p>
-                  <p className="about-body">Most of my clients are beauty businesses: salons, lash techs, nail studios, and fitness coaches who need a professional online presence without the 3-month agency timeline and price tag.</p>
+                  <p className="about-body">I work with independent brands, small businesses, and anyone who needs a professional online presence without the 3-month agency timeline and price tag.</p>
                   <p className="about-body">Every project here was built from scratch, with a real brief and a real outcome in mind. I use AI tools to move fast, not cut corners — the code is clean, the design is intentional, and the sites work.</p>
                 </div>
                 <blockquote className="about-quote">
                   &ldquo;Good design isn&apos;t just how it looks — it&apos;s how fast it loads, how easy it converts, and how proud you feel sending people to it.&rdquo;
                 </blockquote>
                 <div className="about-tags">
-                  {['Based in London', 'Open to remote', 'Beauty & lifestyle', 'Fast turnaround', 'Clean code'].map(t => (
+                  {['Based in London', 'Open to remote', 'Independent brands', 'Fast turnaround', 'Clean code'].map(t => (
                     <span key={t} className="about-tag">{t}</span>
                   ))}
                 </div>
