@@ -177,11 +177,10 @@ export default function Home() {
       <section className="about-section" id="about">
         <div className="about-inner">
           <div className="about-grid">
-            <div className="about-photo">
-              <img src="/jiya.jpg" alt="Jiya — web designer based in London" />
-            </div>
-            <div className="about-right-col">
-              {/* stats row */}
+            <div className="about-left-col">
+              <div className="about-photo">
+                <img src="/jiya.jpg" alt="Jiya — web designer based in London" />
+              </div>
               <div className="about-stats-row">
                 <div>
                   <span className="stat-number pink">3–5</span>
@@ -196,6 +195,8 @@ export default function Home() {
                   <span className="stat-label">ideas to ship</span>
                 </div>
               </div>
+            </div>
+            <div className="about-right-col">
               {/* bio */}
               <div className="about-right">
                 <span className="eyebrow">About me</span>
