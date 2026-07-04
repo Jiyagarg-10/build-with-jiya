@@ -19,7 +19,21 @@ const spaceMono = Space_Mono({
 
 export const metadata: Metadata = {
   title: 'Jiya Garg — Web Designer · AI-powered sites',
-  description: 'Web designer based in London. Clean, conversion-focused websites built in 3–5 days.',
+  description: 'Web designer based in London. Clean, conversion-focused websites built in 2–3 days for beauty businesses & brands.',
+  openGraph: {
+    title: 'Jiya Garg — Web Designer',
+    description: 'I build beautiful websites that convert & grow — for beauty businesses and independent brands. Based in London.',
+    url: 'https://jiyagarg-10.github.io/build-with-jiya',
+    siteName: 'Jiya Garg',
+    images: [{ url: 'https://jiyagarg-10.github.io/build-with-jiya/og-image.png', width: 1200, height: 630, alt: 'Jiya Garg — Web Designer' }],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Jiya Garg — Web Designer',
+    description: 'I build beautiful websites that convert & grow — for beauty businesses and independent brands.',
+    images: ['https://jiyagarg-10.github.io/build-with-jiya/og-image.png'],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
