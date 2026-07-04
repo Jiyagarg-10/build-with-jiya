@@ -166,8 +166,8 @@ export default function Home() {
             <p className="how-cta-headline">Ready to get started?<br /><em>DM me and we'll figure out the rest.</em></p>
           </div>
           <div className="how-cta-buttons">
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="how-btn-primary">DM on Instagram ↗</a>
-            <a href="mailto:hello@buildwithjiya.com" className="how-btn-secondary">Send an email</a>
+            <a href="https://www.instagram.com/jiyagarg__?igsh=MWNwM200cXA1cWRkdQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="how-btn-primary">DM on Instagram ↗</a>
+            <a href="mailto:gargjiya714@gmail.com" className="how-btn-secondary">Send an email</a>
           </div>
         </div>
       </section>
@@ -233,7 +233,7 @@ export default function Home() {
         </h2>
         <div className="cta-buttons">
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/jiyagarg__?igsh=MWNwM200cXA1cWRkdQ%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-solid"
@@ -241,7 +241,7 @@ export default function Home() {
             Comment SITE on Instagram ↗
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/jiyagarg__?igsh=MWNwM200cXA1cWRkdQ%3D%3D&utm_source=qr"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-ghost"
@@ -256,8 +256,8 @@ export default function Home() {
         <span className="footer-left">Build with Jiya ✦ 2026 · London</span>
         <div className="footer-links">
           <a href="https://github.com/Jiyagarg-10" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="mailto:hello@buildwithjiya.com">Email</a>
+          <a href="https://www.instagram.com/jiyagarg__?igsh=MWNwM200cXA1cWRkdQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="mailto:gargjiya714@gmail.com">Email</a>
         </div>
       </footer>
     </>
