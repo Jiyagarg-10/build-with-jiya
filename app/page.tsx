@@ -177,6 +177,9 @@ export default function Home() {
       <section className="about-section" id="about">
         <div className="about-inner">
           <div className="about-grid">
+            <div className="about-photo">
+              <img src="/jiya.jpg" alt="Jiya — web designer based in London" />
+            </div>
             <div className="about-left">
               <div>
                 <span className="stat-number pink">3–5</span>
