@@ -1,36 +1,22 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jiya Garg — Web Designer
 
-## Getting Started
+**🌐 [jiyagarg-10.github.io/build-with-jiya](https://jiyagarg-10.github.io/build-with-jiya)**
 
-First, run the development server:
+Personal portfolio showcasing web design work for beauty businesses and independent brands. Built with Next.js and deployed on GitHub Pages.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Projects
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Site | Stack | Live |
+|------|-------|------|
+| Lumen Aesthetics | HTML · CSS · JS | [View](https://jiyagarg-10.github.io/lumen-aesthetics/) |
+| Joe's Cafe | HTML · CSS · JS | [View](https://jiyagarg-10.github.io/joes-cafe/) |
+| Galaxy Shoes | GSAP · SVG · JS | [View](https://jiyagarg-10.github.io/galaxy-shoes/) |
+| Lê Phin | HTML · CSS · JS | [View](https://jiyagarg-10.github.io/le-phin/) |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Next.js · Framer Motion · TypeScript · GitHub Pages
 
-## Learn More
+## Contact
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+📸 [@jiyagarg__](https://www.instagram.com/jiyagarg__) · ✉️ gargjiya714@gmail.com
