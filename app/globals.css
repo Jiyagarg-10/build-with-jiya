@@ -237,7 +237,7 @@ a { color: inherit; text-decoration: none; }
 }
 .project-image img {
   width: 100%; height: 100%;
-  object-fit: cover; object-position: top;
+  object-fit: cover; object-position: left top;
   display: block;
 }
 .project-image-placeholder {
