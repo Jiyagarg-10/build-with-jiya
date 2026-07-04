@@ -273,6 +273,14 @@ export default function AnimatedSite() {
                   <p className="about-body">Most of my clients are beauty businesses: salons, lash techs, nail studios, and fitness coaches who need a professional online presence without the 3-month agency timeline and price tag.</p>
                   <p className="about-body">Every project here was built from scratch, with a real brief and a real outcome in mind. I use AI tools to move fast, not cut corners — the code is clean, the design is intentional, and the sites work.</p>
                 </div>
+                <blockquote className="about-quote">
+                  &ldquo;Good design isn&apos;t just how it looks — it&apos;s how fast it loads, how easy it converts, and how proud you feel sending people to it.&rdquo;
+                </blockquote>
+                <div className="about-tags">
+                  {['Based in London', 'Open to remote', 'Beauty & lifestyle', 'Fast turnaround', 'Clean code'].map(t => (
+                    <span key={t} className="about-tag">{t}</span>
+                  ))}
+                </div>
               </div>
             </FadeIn>
           </div>

@@ -411,7 +411,30 @@ a { color: inherit; text-decoration: none; }
 .stat-number.teal   { color: var(--teal); }
 .stat-number.yellow { color: var(--yellow); }
 
-.about-right {}
+.about-right { display: flex; flex-direction: column; gap: 0; }
+.about-quote {
+  margin-top: 2rem;
+  border-left: 3px solid var(--pink);
+  padding: 1.25rem 1.5rem;
+  background: rgba(255,77,141,0.07);
+  border-radius: 0 12px 12px 0;
+  font-family: var(--g); font-size: 1.15rem; font-style: italic;
+  color: #ccc; line-height: 1.6;
+}
+.about-tags {
+  display: flex; flex-wrap: wrap; gap: 0.5rem;
+  margin-top: 1.75rem;
+}
+.about-tag {
+  font-family: var(--m); font-size: 9px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 0.4rem 0.9rem; border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #aaa;
+  transition: border-color 0.2s, color 0.2s;
+}
+.about-tag:hover { border-color: var(--pink); color: var(--pink); }
+
 .eyebrow {
   font-family: var(--m); font-size: 9px; letter-spacing: 0.18em;
   text-transform: uppercase; color: #888; display: block; margin-bottom: 1.5rem;
