@@ -29,8 +29,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script dangerouslySetInnerHTML={{ __html: `
           history.scrollRestoration='manual';
           document.documentElement.scrollTop=0;
-          document.addEventListener('DOMContentLoaded',function(){window.scrollTo(0,0);});
+          document.body&&(document.body.scrollTop=0);
           window.addEventListener('load',function(){window.scrollTo(0,0);});
+          window.addEventListener('pageshow',function(e){if(e.persisted||performance.navigation&&performance.navigation.type===2){window.scrollTo(0,0);}});
         ` }} />
       </head>
       <body>{children}</body>
