@@ -25,9 +25,11 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${garamond.variable} ${spaceMono.variable}`}>
-      <body>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `if('scrollRestoration' in history){history.scrollRestoration='manual';}` }} />
+      </head>
+      <body onLoad="window.scrollTo(0,0)">
         {children}
-        <script dangerouslySetInnerHTML={{ __html: `history.scrollRestoration='manual';window.scrollTo(0,0);` }} />
       </body>
     </html>
   )
