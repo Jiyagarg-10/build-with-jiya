@@ -9,8 +9,8 @@ const projects = [
   },
   {
     name: "JOE'S CAFE",
-    desc: 'Interactive café ordering site with drag-and-drop salad builder, animated cart, and smooth Framer Motion page transitions.',
-    tech: 'React · Framer Motion',
+    desc: 'Interactive café ordering site with eat-in and takeaway flow, animated cart, and a clean menu experience.',
+    tech: 'HTML · CSS · JS',
     type: 'Food & Beverage',
     live: 'https://jiyagarg-10.github.io/joes-cafe/',
     code: 'https://github.com/Jiyagarg-10/joes-cafe',
@@ -25,8 +25,8 @@ const projects = [
   },
   {
     name: 'LÊ PHIN',
-    desc: 'Vietnamese coffee shop client mockup for an East Village NYC café. Warm earthy tones, full menu page, embedded map, and ordering flow — built with Durable AI.',
-    tech: 'Durable AI · HTML · CSS',
+    desc: 'Vietnamese coffee shop client mockup for an East Village NYC café. Warm earthy tones, full menu page, embedded map, and ordering flow.',
+    tech: 'HTML · CSS · JS',
     type: 'Food & Beverage',
     live: null,
     code: null,
@@ -51,30 +51,38 @@ export default function Home() {
     <>
       {/* ── NAV ── */}
       <nav className="nav">
-        <div className="nav-left">
-          <span className="nav-initials">JG</span>
+        <div className="nav-logo">
+          <div className="nav-initials">JG</div>
           <span className="nav-brand">Build with Jiya</span>
         </div>
         <div className="nav-links">
           <a href="#projects">Work</a>
           <a href="#about">About</a>
+          <a href="#stack">Stack</a>
           <a href="#contact">Contact</a>
         </div>
       </nav>
 
       {/* ── HERO ── */}
       <section className="hero">
-        <p className="hero-eyebrow">Web designer · AI tools · London ✦ Available for projects</p>
-        <h1 className="hero-name">JIYA</h1>
-        <p className="hero-subtitle">…and I build websites, with a flair for making things convert.</p>
+        <div className="hero-badge-row">
+          <span className="hero-badge badge-greenwich">🎓 University of Greenwich</span>
+          <span className="hero-badge badge-london">📍 London, UK</span>
+          <span className="hero-badge badge-avail">✦ Available for projects</span>
+        </div>
+        <h1 className="hero-headline">
+          I build <span className="c1">beautiful</span> websites<br />
+          that <span className="c2">convert & grow</span>
+        </h1>
+        <p className="hero-sub">…for beauty businesses, independent brands & anyone with a bold vision.</p>
         <p className="hero-body">
-          Self-taught designer based in London, studying at the University of Greenwich. I specialise in clean, fast, conversion-focused websites — primarily for beauty businesses and independent brands, but I&apos;m always up for an interesting brief.
+          Self-taught web designer studying at the University of Greenwich, based in London. I specialise in clean, fast, conversion-focused websites — primarily for beauty businesses and independent brands, but I&apos;m always up for an interesting brief.
         </p>
         <p className="hero-body">
           I use a mix of hand-coded HTML/CSS/JS, React, GSAP, and AI-assisted tools like Lovable, Bolt.new, and Durable to get quality sites live fast. Usually 3–5 days from kick-off to launch.
         </p>
         <div className="hero-pills">
-          {['Greenwich University', 'London', '3–5 day delivery', 'AI-powered builds'].map(t => (
+          {['Greenwich Uni', 'London 📍', '3–5 day delivery', 'AI-powered builds', 'Beauty specialist'].map(t => (
             <span key={t} className="pill">{t}</span>
           ))}
         </div>
@@ -84,12 +92,13 @@ export default function Home() {
       <div className="sym-divider" aria-hidden="true">✦ ✳ ✦ ✳ ✦ ✳ ✦ ✳ ✦</div>
 
       {/* ── PROJECTS ── */}
-      <section className="projects" id="projects">
+      <p className="projects-heading" id="projects">Selected work</p>
+      <section className="projects">
         {projects.map((p, i) => (
           <article key={p.name} className="project-card">
             <Marquee name={p.name} reverse={i % 2 !== 0} />
             <div className="project-body">
-              <div className="project-left">
+              <div>
                 <div className="project-name">{p.name}</div>
                 <p className="project-desc">{p.desc}</p>
                 <div className="project-tech">{p.tech}</div>
@@ -116,34 +125,44 @@ export default function Home() {
 
       {/* ── ABOUT ── */}
       <section className="about-section" id="about">
-        <div className="about-grid">
-          <div className="about-left">
-            <div>
-              <span className="stat-number">3–5</span>
-              <span className="stat-label">day delivery</span>
+        <div className="about-inner">
+          <div className="about-grid">
+            <div className="about-left">
+              <div>
+                <span className="stat-number pink">3–5</span>
+                <span className="stat-label">day delivery</span>
+              </div>
+              <div>
+                <span className="stat-number teal">4</span>
+                <span className="stat-label">live sites built</span>
+              </div>
+              <div>
+                <span className="stat-number yellow">∞</span>
+                <span className="stat-label">ideas to ship</span>
+              </div>
             </div>
-            <div>
-              <span className="stat-number">4</span>
-              <span className="stat-label">live sites</span>
+            <div className="about-right">
+              <span className="eyebrow">About me</span>
+              <p className="about-body">
+                I&apos;m a self-taught web designer based in London, currently studying at the <strong style={{color:'#6ecf6e'}}>University of Greenwich</strong>. I build websites that look good and actually do something — convert visitors, generate bookings, build trust.
+              </p>
+              <p className="about-body">
+                Most of my clients are beauty businesses: salons, lash techs, nail studios, and fitness coaches who need a professional online presence without the 3-month agency timeline and price tag.
+              </p>
+              <p className="about-body">
+                Every project here was built from scratch, with a real brief and a real outcome in mind. I use AI tools to move fast, not cut corners — the code is clean, the design is intentional, and the sites work.
+              </p>
+              <div style={{display:'flex', flexWrap:'wrap', gap:'0.5rem', marginTop:'1.5rem'}}>
+                <span className="about-location loc-greenwich">🎓 Univ. of Greenwich</span>
+                <span className="about-location loc-london">📍 London, UK</span>
+              </div>
             </div>
-          </div>
-          <div className="about-right">
-            <span className="eyebrow">About</span>
-            <p className="about-body">
-              I&apos;m a self-taught web designer based in London, currently studying at the University of Greenwich. I build websites that look good and actually do something — convert visitors, generate bookings, build trust.
-            </p>
-            <p className="about-body">
-              Most of my clients are beauty businesses: salons, lash techs, nail studios, and fitness coaches who need a professional online presence without the 3-month agency timeline and price tag.
-            </p>
-            <p className="about-body">
-              Every project here was built from scratch, with a real brief and a real outcome in mind. I use AI tools to move fast, not cut corners — the code is clean, the design is intentional, and the sites work.
-            </p>
           </div>
         </div>
       </section>
 
       {/* ── STACK ── */}
-      <section className="stack-section">
+      <section className="stack-section" id="stack">
         <span className="eyebrow">Stack &amp; tools</span>
         <div className="stack-pills">
           {['HTML/CSS/JS', 'React', 'GSAP', 'Framer Motion', 'Lovable', 'Bolt.new', 'Durable', 'Framer', 'Python', 'SQL'].map(t => (
@@ -154,7 +173,7 @@ export default function Home() {
 
       {/* ── CTA ── */}
       <section className="cta-section" id="contact">
-        <p className="cta-eyebrow">Looking for my next project</p>
+        <p className="cta-eyebrow">Based in London · Available now</p>
         <h2 className="cta-headline">
           Every business has a story;<br />
           <em>let&apos;s build the website that tells it.</em>
@@ -181,7 +200,7 @@ export default function Home() {
 
       {/* ── FOOTER ── */}
       <footer className="footer">
-        <span className="footer-left">Build with Jiya ✦ 2026</span>
+        <span className="footer-left">Build with Jiya ✦ 2026 · London</span>
         <div className="footer-links">
           <a href="https://github.com/Jiyagarg-10" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
