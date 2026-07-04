@@ -26,11 +26,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${garamond.variable} ${spaceMono.variable}`}>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: `if('scrollRestoration' in history){history.scrollRestoration='manual';}` }} />
+        <script dangerouslySetInnerHTML={{ __html: `if('scrollRestoration' in history){history.scrollRestoration='manual';}window.addEventListener('load',function(){window.scrollTo(0,0);});` }} />
       </head>
-      <body onLoad="window.scrollTo(0,0)">
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }
