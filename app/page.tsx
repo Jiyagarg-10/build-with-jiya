@@ -163,7 +163,6 @@ export default function Home() {
         </div>
         <div className="how-cta">
           <div className="how-cta-text">
-            <span className="how-cta-label">Starting from $99 · ₹5,999</span>
             <p className="how-cta-headline">Ready to get started?<br /><em>DM me and we'll figure out the rest.</em></p>
           </div>
           <div className="how-cta-buttons">
