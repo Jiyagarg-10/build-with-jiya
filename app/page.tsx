@@ -6,7 +6,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/lumen-aesthetics/',
     code: 'https://github.com/Jiyagarg-10/lumen-aesthetics',
     bg: 'linear-gradient(135deg, #1a0a1e 0%, #2d1040 100%)',
-    img: null,
+    img: '/screenshots/lumen.png',
   },
   {
     name: "JOE'S CAFE",
@@ -15,7 +15,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/joes-cafe/',
     code: 'https://github.com/Jiyagarg-10/joes-cafe',
     bg: 'linear-gradient(135deg, #0a1a12 0%, #0f2d1e 100%)',
-    img: null,
+    img: '/screenshots/joes-cafe.png',
   },
   {
     name: 'GALAXY SHOES',
@@ -24,7 +24,7 @@ const projects = [
     live: 'https://jiyagarg-10.github.io/galaxy-shoes/',
     code: 'https://github.com/Jiyagarg-10/galaxy-shoes',
     bg: 'linear-gradient(135deg, #0a0a1e 0%, #151535 100%)',
-    img: null,
+    img: '/screenshots/galaxy-shoes.png',
   },
   {
     name: 'LÊ PHIN',
