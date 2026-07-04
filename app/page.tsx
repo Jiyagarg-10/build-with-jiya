@@ -135,6 +135,44 @@ export default function Home() {
         ))}
       </section>
 
+      {/* ── HOW IT WORKS ── */}
+      <section className="how-section">
+        <div className="how-header">
+          <span className="eyebrow">How it works</span>
+          <span className="how-tagline">From first message to live site in 3–5 days.</span>
+        </div>
+        <div className="how-steps">
+          <div className="how-step">
+            <span className="how-step-num">01</span>
+            <div className="how-step-title">Brief</div>
+            <p className="how-step-desc">You tell me about your business, what you need, and what you like. No forms, no calls required — a DM or voice note works perfectly.</p>
+            <span className="how-step-time">Day 1</span>
+          </div>
+          <div className="how-step">
+            <span className="how-step-num">02</span>
+            <div className="how-step-title">Build</div>
+            <p className="how-step-desc">I design and build your site — clean, fast, mobile-first. You get a preview link to review before anything goes live. One round of revisions included.</p>
+            <span className="how-step-time">Days 2–4</span>
+          </div>
+          <div className="how-step">
+            <span className="how-step-num">03</span>
+            <div className="how-step-title">Launch</div>
+            <p className="how-step-desc">Your site goes live on your domain. I handle the deployment, do a final check, and hand everything over — including the code if you want it.</p>
+            <span className="how-step-time">Day 5</span>
+          </div>
+        </div>
+        <div className="how-cta">
+          <div className="how-cta-text">
+            <span className="how-cta-label">Starting from $99 · ₹5,999</span>
+            <p className="how-cta-headline">Ready to get started?<br /><em>DM me and we'll figure out the rest.</em></p>
+          </div>
+          <div className="how-cta-buttons">
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="how-btn-primary">DM on Instagram ↗</a>
+            <a href="mailto:hello@buildwithjiya.com" className="how-btn-secondary">Send an email</a>
+          </div>
+        </div>
+      </section>
+
       {/* ── ABOUT ── */}
       <section className="about-section" id="about">
         <div className="about-inner">
