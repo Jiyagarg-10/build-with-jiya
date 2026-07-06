@@ -19,4 +19,4 @@ Next.js · Framer Motion · TypeScript · GitHub Pages
 
 ## Contact
 
-📸 [@jiyagarg__](https://www.instagram.com/jiyagarg__) · ✉️ gargjiya714@gmail.com
+📸 [@buildwithjiya](https://www.instagram.com/buildwithjiya) · ✉️ gargjiya714@gmail.com
